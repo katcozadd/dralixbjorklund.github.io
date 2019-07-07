@@ -1,0 +1,210 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.section-2, .section-5 {
+  background-color: #8e9c5a;
+  padding: 4rem;
+  margin-bottom: 2rem; }
+
+.section-3, .section-7 {
+  background-color: #bad391;
+  padding: 8rem; }
+
+.section-4 {
+  padding: 2rem 0; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 3rem; }
+
+.heading-primary {
+  text-align: left;
+  font-size: 4rem;
+  letter-spacing: 1.8rem; }
+
+.heading-secondary {
+  text-align: left;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 4rem; }
+
+.heading-secondary2 {
+  text-align: left;
+  font-size: 4rem;
+  font-weight: normal;
+  color: #FFFFFF;
+  margin-bottom: 3rem; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+a:hover {
+  text-decoration: underline; }
+
+.paragraph {
+  text-align: center;
+  font-size: 2rem;
+  padding: 6rem 2%;
+  line-height: 3rem;
+  font-weight: lighter; }
+
+.paragraph2 {
+  text-align: left;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: normal;
+  color: #FFFFFF;
+  margin-bottom: 3rem; }
+
+.paragraph3 {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: lighter; }
+
+.photo-credit {
+  text-align: right;
+  font-size: 1.5rem;
+  font-style: italic; }
+
+.paragraph-redirect {
+  text-align: left;
+  font-size: 2rem;
+  padding: 2rem 0;
+  line-height: 3rem;
+  margin-bottom: 2rem; }
+
+.quote-primary {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100; }
+
+#map {
+  height: 60rem;
+  width: auto; }
+
+
+.row {
+  max-width: 160rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 2rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 2rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 2rem) / 4) + 2rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
+
+.section-intro {
+  padding: 4rem 0 6rem 0;
+  margin: 0 auto;
+  text-align: center; }
+
+.header__text-box {
+  text-align: center; }
+
+.header__logo-box {
+  text-align: left;
+  margin-top: -2rem; }
+
+.header__logo {
+  height: 100%;
+  width: 100%;
+  position: relative; }
+
+nav.main-nav {
+  text-align: center;
+  padding-top: 2rem; }
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  padding-right: 2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase; }
+
+nav.footer-nav {
+  text-align: center;
+  padding-bottom: 4rem; }
+
+nav.footer-nav a {
+  color: #fff; }
+
+.section-direct {
+  padding: 0; }
+
+.section-quote {
+  padding: 20rem 0; }
+
+.section-main {
+  padding: 5rem 0 30rem 0; }
+
+.section-contact {
+  padding: 4rem 0 2rem 0;
+  margin: 0 auto;
+  text-align: center; }
+
+.section-one {
+  padding: 4rem 0 2rem 0; }
+
+.section-two {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 2rem; }
+
+.section-four {
+  padding: 20rem 0; }
+
+.section-five {
+  padding-bottom: 2rem; }
