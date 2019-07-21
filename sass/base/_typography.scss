@@ -38,6 +38,12 @@ a:hover {
     text-decoration: underline;
 }
 
+.contact {
+    text-align: left;
+    font-weight: normal;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
 
 .paragraph {
 	text-align: center;
@@ -45,6 +51,14 @@ a:hover {
     padding: 6rem 2%;
     line-height: 3rem;
     font-weight: lighter;
+}
+
+.footer-paragraph {
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2rem 0;
 }
 
 .paragraph2 {
@@ -62,6 +76,14 @@ a:hover {
     line-height: 3rem;
     font-weight: lighter;
     // padding: 1rem 16rem 0 16rem;
+}
+
+.paragraph4 {
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: normal;
+    margin-bottom: 3rem;
 }
 
 .photo-credit {
